@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sistema.css">
+  <title>Sistema Escola</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="img/image.jpg" class="navbar-brand" alt="">
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Sair</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-md-2 sidebar" style="padding-bottom: 300px;">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="#"><i class="fa fa-users " aria-hidden="true"></i>Professor</a></li>
+          <li><a href="#">Listar Professor</a></li>
+          <li><a href="#">Professor</a></li>
+          <li><a href="#">Requerimentos</a></li>
+        </ul>
+
+        <ul class="nav nav-sidebar">
+          <li><a href="#"><i class="fa fa-envelope " aria-hidden="true"></i>Avisos</a></li>
+          <li><a href="#">Listar Avisos</a></li>
+          <li><a href="#">Novo Aviso</a></li>
+        </ul>
+
+        <ul class="nav nav-sidebar">
+          <li><a href="#"><i class="fa fa-graduation-cap " aria-hidden="true"></i>Aluno</a></li>
+          <li><a href="#">Listar Alunos</a></li>
+          <li><a href="#">Novo Aluno</a></li>
+        </ul>
+
+        <ul class="nav nav-sidebar">
+          <li><a href="#"><i class="fa fa-puzzle-piece " aria-hidden="true"></i>Cursos</a></li>
+          <li><a href="#">Listar Cursos</a></li>
+          <li><a href="#">Novo Curso</a></li>
+        </ul>
+      </div>
+      <!--col-md-2--->
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="container-fluid">
+
+              <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Quantitativos</div>
+                <div class="panel-body">
+
+                  <!-- Table -->
+                  <div class="table-responsive">
+                    <table class="table" style="min-height: 310px;">
+                      <thead>
+                        </tr>
+                        <th>PeriodoLetivo</th>
+                        <th>Turno</th>
+                        <th>Turma</th>
+                        <th>Série</th>
+                        <th>Ativo</th>
+                        <th>Dependência</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                  <!--table-responsive -->
+                </div> <!-- Panel body -->
+              </div><!-- Panel default -->
+            </div>
+            <!--Container-fluid -->
+          </div>
+          <!--Row-->
+        </div>
+        <!--col-md-7-->
+
+        <div class="col-md-5">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="form-inline">
+                <div class="form-group">
+                  <label for="sel1">Indicadores</label>
+                  <select name="sel1" class="form-control">
+                    <option value="Periodo">Periodo</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="sel1" class="form-control">
+                    <option value="Unidade">Unidade</option>
+                  </select>
+                </div>
+              </div>
+              <!--form-inline-->
+            </div>
+            <!--Panel Heading-->
+            <br>
+            <div class="panel-boy">
+              <ul class="list-group">
+                <li class="list-group-item">
+               Requerimentos pendentes
+                  <span class="badge">4</span>
+                </li>
+                <li class="list-group-item">
+                  Requerimentos pendentes para o SGE
+                  <span class="badge">6</span>
+                </li>
+                <li class="list-group-item">
+                  Alunos fora do Diário
+                  <span class="badge">0</span>
+                </li>
+                <li class="list-group-item">
+                  Novas Mensagens
+                  <span class="badge">0</span>
+                </li>
+                <li class="list-group-item">
+                Total de Diários
+                  <span class="badge">0</span>
+                </li>
+                <li class="list-group-item">
+                Diários pendentes de notas ou não "concluiu"
+                  <span class="badge">0</span>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Professores Ativos,possui diário</a>
+                  <span class="badge">0</span>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Professores não Acessaram o Sistema nos Ultimos 7 dias</a>
+                  <span class="badge">0</span>
+                </li>
+              </ul>
+              <!--List-group-->
+            </div>
+         
+
+        
+          </div><!-- Panel Default -->
+        </div><!-- Col-md-5 -->
+
+        <!--col-sm-9 -->
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1 class="panel-title">Alunos</h1>
+            </div>
+            <div class="panel-body">
+
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#Info" role="tab" data-toggle="tab">Remover Aluno do
+                    Diário</a></li>
+                <li><a href="">Podem perder de Ano</a></li>
+                <li><a href="">Faltantes</a></li>
+                <li><a href="">Matriculados em Dependência</a></li>
+              </ul>
+
+              <!-- Conteúdo das tabs -->
+              <div class="tab-content">
+
+                <!-- Aba  informaçoes -->
+                <div class="tab-pane active" role="tabpanel" id="info">
+
+                  <div class="table-responsive scroll">
+                    <table class="table">
+                      <thead>
+                        </tr>
+                        <th>Matricula</th>
+                        <th>Aluno</th>
+                        <th>Solicitações</th>
+                        <th>Ações</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>TAYLAN XAVIER DOS SANTOS</td>
+                          <td>2</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>JOCELIA SOUZA SANTOS</td>
+                          <td>1</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>MONARA RIBEIRO DIOGO</td>
+                          <td>1</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>GISLANE BARROS SANTOS BRITO</td>
+                          <td>2</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>SUELLY SANTOS DE OLIVEIRA</td>
+                          <td>2</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <tbody>
+                        <tr>
+                          <Td>6214655</Td>
+                          <td>TAYLAN XAVIER DOS SANTOS</td>
+                          <td>2</td>
+                          <td><button type="button" class="btn btn-default">Processar</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--TAB-PANE-ACTYVE-->
+              </div>
+              <!--TAB-CONTENT-->
+            </div>
+            <!--Col-md-12-->
+          </div>
+        </div>
+
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Diários Pendentes</h3>
+              </div>
+
+              <div class="panel-body">
+                <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Localizar Professor">
+                </form> 
+                <br>
+                <br>
+                <br>
+
+                <div class="table-responsive scroll">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Periodo Letivo</th>
+                        <th>Turma</th>
+                        <th>Turno</th>
+                        <th>Série</th>
+                        <th>Disciplina</th>
+                        <th>Professor</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                           <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>     <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2019</td>
+                        <td>Análises Clínicas</td>
+                        <td>VESPETINO</td>
+                        <td>1°SERIE-TÉCNOCO EM ANALISES CLINICAS</td>
+                        <td><a href="#">Lingua Portuguesa e Redação</a></td>
+                        <td>Glória Liesner Pacheco</td>
+                        <td><span class="label label-info">Ativo</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+
+
+         
+      
+            </div>
+          </div>
+        </div>
+
+            <!--Cotainer-fluid--->
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="https://kit.fontawesome.com/b63d24bedf.js"></script>
+
+</body>
+</html>
